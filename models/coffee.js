@@ -3,7 +3,7 @@ const Schema = mongoose.Schema;
 const coffeeSchema = new Schema(
     {
         name: { type: String, required: true},
-        image: String,
+        img: String,
         price: Number,
         description: String,
         qty: Number,
