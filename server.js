@@ -104,7 +104,7 @@ app.put("/ryancf/:id/buy"), (req, res) => {
     req.body,
     { new: true },
     (error, updatecoffee) => {
-      res.redirect('/ryancf');
+      // res.redirect('/ryancf/:id/buy');
     }
   );
 };
