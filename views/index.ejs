@@ -1,31 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/style.css" />
     <title>Coffee list</title>
 </head>
+
 <body>
     <nav>
-        <a href="/ryancf/new">Add a Coffee</a>
+        <a href="/ryancf/new">Add New Coffee</a>
     </nav>
-    <h1>Coffee Index Page</h1>
-    <ul>
-        <% coffee.forEach( coffee => { %>
-			
-            <li>
-                
-                <a href="/ryancf/<%=coffee._id %>"> <%=coffee.name; %> </a>
-               
-            </li>
-            <a href="/ryancf/<%=coffee._id %>">  <img src="<%=coffee.img %> " alt=""></a>
-            <br>
-            <a href="/ryancf/<%=coffee._id%>/edit"> <button id="editindex">Edit</button></a>
-            <form action="/ryancf/<%=coffee._id; %>?_method=DELETE" method="POST">
-                <input type="submit" value="DELETE" id="deleteindex"/>
-            </form>
-                        <% }) %>
-                    </ul>
+    <h1>Welcome to Ryanbucks!</h1>
+
+    <% coffee.forEach( coffee=> { %>
+
+
+
+        <a href="/ryancf/<%=coffee._id %>"> </a>
+
+
+        <a href="/ryancf/<%=coffee._id %>"> <img src="<%=coffee.img %> " alt=""></a>
+        <br>
+
+        </form>
+        <% }) %>
+
 </body>
+
 </html>
