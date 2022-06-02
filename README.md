@@ -1,6 +1,6 @@
 # coffeeblog
 
-A coffee blog with full CRUD with six different types of coffee to provide image, quantity, name, description, and price.
+A coffee blog with full CRUD with eight different types of coffee to provide image, quantity, name, description, and price. Customers can access to edit, delete, and buy.
 
 ---
 
@@ -22,12 +22,14 @@ A coffee blog with full CRUD with six different types of coffee to provide image
 
 ---
 
-Screenshot
+### Screenshot
 
 ![image](https://user-images.githubusercontent.com/104465292/171688230-0c20e066-511c-4441-b84a-8d796651d05b.png)
 
-
 ---
 
-Getting Started
+### Getting Started
+ - I want to have full access to authentication in near future to have customers can actually order with their own account.
+ - I want to add more functions such as menubar on the side where customers can easily see where to go.
+ 
 
