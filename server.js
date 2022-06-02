@@ -25,7 +25,7 @@ app.use(express.static('public'));
 
 
 app.get('/', (req, res) => {
- res.render('/ryancf');
+ res.render('index.ejs');
 });
 
 app.get('/ryancf', (req, res) => {
