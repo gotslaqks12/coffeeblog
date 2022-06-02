@@ -7,7 +7,7 @@ A coffee blog with full CRUD with eight different types of coffee to provide ima
 ### Technologies Used
  - HTML
  - CSS
- - Node.js
+ - Express
  - Mongoose
  - MongoDB
  - EJS
