@@ -28,8 +28,12 @@ A coffee blog with full CRUD with eight different types of coffee to provide ima
 
 ---
 
-### Getting Started
+### Future Enhancements
  - I want to have full access to authentication in near future to have customers can actually order with their own account.
  - I want to add more functions such as menubar on the side where customers can easily see where to go.
  
+ ---
+ 
+ ### Getting Started
+  [Deploy to Heroku]()
 
