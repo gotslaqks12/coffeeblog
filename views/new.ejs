@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/style.css"/>
     <title>Document</title>
+    <style>
+        .new{
+            justify-content: center;
+            display: flex;
+
+        }
+        h1{
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            background-color: rgb(233, 233, 137);
+            color: lightpink;
+        }
+    </style>
 </head>
 <body>
-    <h1>New Coffee Request</h1>
+    <h1>☆New Coffee Request☆</h1>
+    <div class="new">
     <form action="/ryancf" method="POST">
         Name: <input type="text" name="name"/><br />
         Image: <input type="text" name="img"/><br />
@@ -17,5 +32,6 @@
         Quantity: <input type="text" name="qty"/><br />
        <input type="submit" name="" value="Add Coffee"/>
     </form>
+    </div>
 </body>
 </html>

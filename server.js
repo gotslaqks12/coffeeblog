@@ -24,6 +24,10 @@ app.use(methodOverride('_method'));
 app.use(express.static('public'));
 
 
+app.get('/', (req, res) => {
+ res.render('/ryancf');
+});
+
 app.get('/ryancf', (req, res) => {
   coffee.find({}, (error, allCoffee) => {
     res.render("index.ejs", {

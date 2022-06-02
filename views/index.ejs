@@ -7,27 +7,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/public/style.css" />
     <title>Coffee list</title>
+    <style>
+        .image{
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            align-items: center;
+            align-content: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+        h1{
+            display: flex;
+            justify-content: center;
+            color: green;
+            background-color: rgb(233, 233, 137);
+        }
+        .flex-container{
+            display: flex;
+            justify-content: right;
+        }
+
+    </style>
 </head>
 
 <body>
-    <nav>
+    <div class="flex-container">
         <a href="/ryancf/new">Add New Coffee</a>
-    </nav>
+    </div>
     <h1>Welcome to Ryanbucks!</h1>
-
+    <div class="image">
     <% coffee.forEach( coffee=> { %>
-
-
-
         <a href="/ryancf/<%=coffee._id %>"> </a>
-
-
         <a href="/ryancf/<%=coffee._id %>"> <img src="<%=coffee.img %> " alt=""></a>
         <br>
-
         </form>
         <% }) %>
-
+    </div>
 </body>
 
 </html>

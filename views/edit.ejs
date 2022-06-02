@@ -8,13 +8,22 @@
     <link rel="stylesheet" href="/public/style.css" />
     <title>Welcome to Ryanbucks!</title>
     <style>
-        body{
-            background-color: blue;
+        .div{
+            justify-content: center;
+            display: flex;
+        }
+        h1{
+            color: lightpink;
+            background-color: rgb(233, 233, 137);
+            justify-content: center;
+            display: flex;
         }
     </style>
 </head>
 
 <body>
+    <h1>Edit Your Favorite Drink!</h1>
+<div class="div">
     <form action="/ryancf/<%=coffee._id%>?_method=PUT" method="POST">
 
         <input type="text" name="name" placeholder="name" value="<%=coffee.name%>">
@@ -29,6 +38,7 @@
         <br>
         <input type="submit" name="" value="update">
     </form>
+    </div>
 </body>
 
 </html>
