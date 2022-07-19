@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="/public/style.css" />
     <title>Welcome to Ryanbucks!</title>
     <style>
-        .div{
+        .edit{
             justify-content: center;
             display: flex;
         }
@@ -23,7 +23,7 @@
 
 <body>
     <h1>Edit Your Favorite Drink!</h1>
-<div class="div">
+<div class="edit">
     <form action="/ryancf/<%=coffee._id%>?_method=PUT" method="POST">
 
         <input type="text" name="name" placeholder="name" value="<%=coffee.name%>">

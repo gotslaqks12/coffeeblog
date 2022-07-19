@@ -35,33 +35,25 @@ app.get('/ryancf', (req, res) => {
     });
   });
 });
-
 // routes
 // I
-
 app.get('/ryancf/coffee', (req, res) => {
   coffee.deleteMany({}, (error, allCoffee) => { });
   coffee.create(coffeeInfo, (error, data) => {
     res.redirect("/ryancf");
   });
 });
-
 // N
-
 app.get("/ryancf/new", (req, res) => {
   res.render("new.ejs");
 });
-
 // D
-
 app.delete("/ryancf/:id", (req, res) => {
   coffee.findByIdAndDelete(req.params.id, (error, deletedcoffee) => {
     res.redirect('/ryancf')
   });
 });
-
 // U
-
 app.put("/ryancf/:id", (req, res) => {
   coffee.findByIdAndUpdate(
     req.params.id,
@@ -72,17 +64,13 @@ app.put("/ryancf/:id", (req, res) => {
     }
   );
 });
-
 // C
-
 app.post("/ryancf", (req, res) => {
   coffee.create(req.body, (error, createdcoffee) => {
     res.redirect("/ryancf");
   });
 });
-
 // E
-
 app.get("/ryancf/:id/edit", (req, res) => {
   coffee.findById(req.params.id, (error, foundcoffee) => {
     res.render("edit.ejs", {
@@ -90,9 +78,7 @@ app.get("/ryancf/:id/edit", (req, res) => {
     });
   });
 });
-
 // show
-
 app.get('/ryancf/:id', (req, res) => {
   coffee.findById(req.params.id, (err, foundcoffee) => {
     res.render('show.ejs', {
@@ -100,7 +86,6 @@ app.get('/ryancf/:id', (req, res) => {
     });
   });
 });
-
 
 app.put("/ryancf/:id/buy"), (req, res) => {
   coffee.Save(
@@ -112,7 +97,6 @@ app.put("/ryancf/:id/buy"), (req, res) => {
     }
   );
 };
-
 app.post('/ryancf/:id/buy', (req, res) => {
   coffee.findById(req.params.id, (err, data) => {
     if (data.qty <= 0) {
